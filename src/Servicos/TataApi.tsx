@@ -8,9 +8,6 @@ const apiClient = axios.create({
     }
 });
 
-export const BuscarTodosUsuarios =()=>{
-    return apiClient.get('')
-}
 
 export const CriarUsuario = (dadosUsuario: Usuario) =>{
     return apiClient.post('/User', dadosUsuario)

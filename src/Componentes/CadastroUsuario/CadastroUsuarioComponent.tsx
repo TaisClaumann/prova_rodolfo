@@ -47,7 +47,7 @@ const CadastroUsuarioComponent = () => {
         event.preventDefault();
         try {
             const response = await CriarUsuario(usuario);
-            console.log(response);
+            console.log(response.data);
             if (response.data && response.status === 200) {
                 alert('Cadastro realizado com sucesso');
             } else {
